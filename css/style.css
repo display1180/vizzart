@@ -242,6 +242,18 @@ body {
   color: #fff;
 }
 
+.sect5 .row {
+  animation: toLeft 20s infinite;
+}
+@keyframes toLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
 .sect6 .sect_wrap {
   text-align: center;
   padding: 120px 10vw;
