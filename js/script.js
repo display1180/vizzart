@@ -19,3 +19,14 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-scrollbar",
   },
 });
+
+const intro = document.querySelector(".intro");
+const introSpan = document.querySelector(".intro .inner span");
+console.log(intro);
+
+setTimeout(() => {
+  intro.classList.add("on");
+}, 200);
+setTimeout(() => {
+  intro.classList.add("end");
+}, 800);

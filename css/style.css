@@ -27,6 +27,40 @@ body {
   font-family: "Outfit", "NanumSquareNeo-Variable", sans-serif;
   overflow-x: hidden;
 }
+.intro {
+  background: #315c7b;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-size: 12vw;
+  font-weight: 800;
+  justify-content: center;
+  align-items: center;
+  transition: 1s cubic-bezier(0.52, 0.01, 0, 1);
+  transition-delay: 0.8s;
+}
+.intro.on {
+}
+.intro.on.end {
+  top: -100vh;
+}
+.intro .inner {
+  overflow: hidden;
+  height: 12vw;
+}
+.intro .inner span {
+  transform: translateY(200px);
+  display: block;
+  color: #ece1d9;
+  transition: 1s cubic-bezier(0.52, 0.01, 0, 1);
+}
+.intro.on .inner span {
+  transform: translateY(0);
+}
 .gnb {
   display: flex;
   justify-content: space-between;
@@ -309,7 +343,13 @@ body {
   color: #315c7b;
   box-shadow: 5px 5px 10px #315c7b22;
 }
-
+.sub .content {
+  padding-top: 100px;
+}
+.sub .content img {
+  margin: 0 auto;
+  display: block;
+}
 @media screen and (max-width: 767px) {
   .sect_wrap {
     display: flex;

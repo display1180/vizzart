@@ -1,0 +1,39 @@
+#textColored {
+  font-size: 5rem;
+  font-weight: bold;
+  background-color: #315c7b;
+}
+
+#textColored > div > p {
+  background: linear-gradient(to right, #315c7b 50%, #a2bbce 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: left;
+  width: 100%;
+  font-size: 5.5vw;
+}
+
+#textColored_pink {
+  font-size: 5rem;
+  font-weight: bold;
+  background-color: #b91443;
+}
+
+#textColored_pink > div > p {
+  background: linear-gradient(to right, #b91443 50%, #db8aa1 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-align: left;
+  width: 100%;
+  font-size: 5.5vw;
+}
+
+#textAni img {
+  z-index: 10;
+}

@@ -5,16 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VIZZART</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_juniee.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+
+    <!-- GSAP 라이브러리 설정 -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"
+    ></script>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/script.js"></script>
   </head>
 
   <body>
     <div id="smooth-wrapper">
       <div id="smooth-content">
         <div class="wrap">
+          <div class="intro">
+            <div class="inner">
+              <span>VIZZART!</span>
+            </div>
+          </div>
           <div class="gnb">
             <a href="#">[ VISION ART ]</a>
             <h1><img src="img/vizzart_logo.jpg" alt="vizzart" /></h1>
@@ -22,47 +44,56 @@
           </div>
 
           <div class="content">
-            <div class="sect sect1">
+            <div class="sect sect1 mainVisual">
               <h2>VIZZART!</h2>
               <a href="#">HAPPY COOKING</a>
               <!-- <img src="/img/vizzart_main.jpg" alt="vizzart" /> -->
             </div>
-            <div class="sect sect2">
+            <div class="sect sect2" id="textColored">
               <div class="sect_wrap">
                 <h2>ABOUT VIZZART</h2>
-                <p>
-                  VIZZART는 변화해가는 주방의 트렌드에 맞춰 개발된 COOKWARE
-                  시리즈입니다.
-                </p>
+                <p>VIZZART는 변화해가는 주방의</p>
+                <p>트렌드에 맞춰 개발된 COOKWARE</p>
+                <p>시리즈입니다.</p>
               </div>
             </div>
-            <div class="sect sect3">
+            <div class="sect sect3" id="textAni">
               <div class="img">
                 <img src="img/vizzart_cote.png" alt="cote" />
               </div>
               <ul>
-                <li>
+                <li class="t1">
                   <a href="#"
-                    >WOODY SERIES · WOODY SERIES · WOODY SERIES · WOODY SERIES
+                    >WOODY SERIES · WOODY SERIES · WOODY SERIES · WOODY SERIES ·
+                    WOODY SERIES · WOODY SERIES · WOODY SERIES · WOODY SERIES ·
+                    WOODY SERIES · WOODY SERIES · WOODY SERIES · WOODY SERIES ·
+                    WOODY SERIES · WOODY SERIES · WOODY SERIES
                   </a>
                 </li>
-                <li class="active">
+                <li class="active t2">
                   <a href="#"
-                    >COTE SERIES · COTE SERIES · COTE SERIES · COTE SERIES
+                    >COTE SERIES · COTE SERIES · COTE SERIES · COTE SERIES ·
+                    COTE SERIES · COTE SERIES · COTE SERIES · COTE SERIES · COTE
+                    SERIES · COTE SERIES · COTE SERIES · COTE SERIES · COTE
+                    SERIES · COTE SERIES · COTE SERIES
                   </a>
                 </li>
-                <li>
-                  <a href="#">SPECIAL : HUBE SERIES · SPECIAL : HUBE SERIES</a>
+                <li class="t3">
+                  <a href="#"
+                    >SPECIAL : HUBE SERIES · SPECIAL : HUBE SERIES · SPECIAL :
+                    HUBE SERIES · SPECIAL : HUBE SERIES · SPECIAL : HUBE SERIES
+                    · SPECIAL : HUBE SERIES · SPECIAL : HUBE SERIES · SPECIAL :
+                    HUBE SERIES</a
+                  >
                 </li>
               </ul>
             </div>
-            <div class="sect sect4">
+            <div class="sect sect4" id="textColored_pink">
               <div class="sect_wrap">
                 <h2>BEYOND COOKING</h2>
-                <p>
-                  소중한 사람들과의 신나는 시간! VIZZART와 함께 다양하고 건강한
-                  요리를 즐겨보세요.
-                </p>
+                <p>소중한 사람들과의 신나는 시간!</p>
+                <p>VIZZART와 함께 다양하고 건강한</p>
+                <p>요리를 즐겨보세요.</p>
               </div>
             </div>
             <div class="sect sect5">
@@ -163,7 +194,7 @@
               </li>
             </ul>
 
-            <span id="menu"> = </span>
+            <a id="menu" href="./sub.html"> = </a>
             <ul>
               <li><h6>( SITEMAP )</h6></li>
               <li><a href="#">BRAND</a></li>
