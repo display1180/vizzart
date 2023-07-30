@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;700&family=Outfit:wght@200;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  color: #222;
+  font-family: "Outfit", sans-serif;
+}
+.gnb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 2vw;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+.gnb h1 {
+  width: 10vw;
+  transform: translateY(3px);
+}
+
+.gnb h1 img {
+  width: 100%;
+}
+.gnb ul {
+  display: flex;
+  gap: 2vw;
+}
+
+.sect1 {
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  padding: 7vw 2vw;
+  background: url("../img/main1.jpg") no-repeat center / cover;
+  color: #fff;
+  text-align: right;
+}
+.sect1 h2 {
+  font-size: 100px;
+  color: #fff;
+}
+
+.sect2 .sect_wrap {
+  text-align: center;
+  padding: 80px 10vw;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  text-align: left;
+  gap: 2vw;
+}
+.sect2 h2 {
+  font-size: 60px;
+  width: 50%;
+  display: inline-block;
+  line-height: 1.1;
+  color: #d2224a;
+}
+.sect2 p {
+  width: 50%;
+}
+
+.sect3 .row {
+  display: flex;
+  flex-direction: row;
+  padding: 0 2vw;
+  gap: 2vw;
+  margin: 0 auto;
+}
+.sect3 .sect_wrap .item {
+  width: 100%;
+  height: 48vw;
+  background: #eee;
+  margin-bottom: 2vw;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  padding: 3vw;
+  line-height: 1.4;
+  text-align: left;
+  background: url("../img/woody-pan-main1.jpg") no-repeat center / cover;
+}
+.sect3 .sect_wrap .item h3 {
+  font-size: 60px;
+  line-height: 1;
+}
+.sect3 .sect_wrap .item p {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.sect3 .sect_wrap .item.pot {
+  background-image: url("../img/cote-pot-main1.jpg");
+}
+.sect3 .sect_wrap .item.triple {
+  background-image: url("../img/triple-main1.jpg");
+}
+.sect3 .sect_wrap .item.egg {
+  background-image: url("../img/egg-main1.jpg");
+  background-position: bottom;
+}
+.sect3 .sect_wrap .item.egg h3 {
+  color: #fff;
+}
+
+.footer {
+  text-align: center;
+  padding: 2vw;
+  color: #aaa;
+  line-height: 1.8em;
+  font-size: 12px;
+}
+.footer ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  display: inline-flex;
+  gap: 2vw;
+}
+
+@media screen and (max-width: 767px) {
+  .sect_wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .sect2 .sect_wrap {
+    flex-direction: column;
+  }
+  .sect2 h2,
+  .sect2 p {
+    width: 100%;
+  }
+  .sect3 .row {
+    width: 100%;
+  }
+  .sect3 .row .item h3 {
+    font-size: 12vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sect3 .row {
+    flex-direction: column;
+  }
+  .sect3 .row .item {
+    width: 100%;
+    height: 96vw;
+  }
+}
