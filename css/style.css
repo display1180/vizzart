@@ -140,6 +140,7 @@ body {
   font-size: 70px;
   font-weight: 700;
   line-height: 100px;
+  white-space: nowrap;
 }
 .sect3 {
   position: relative;
@@ -267,6 +268,7 @@ body {
   line-height: 100px;
   color: #315c7b;
   padding-bottom: 30px;
+  white-space: nowrap;
 }
 
 .sect7 {
