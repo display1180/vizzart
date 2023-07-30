@@ -243,7 +243,7 @@ body {
 }
 
 .sect5 .row {
-  animation: toLeft 20s infinite;
+  animation: toLeft 30s infinite;
 }
 @keyframes toLeft {
   from {
