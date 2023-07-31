@@ -101,8 +101,8 @@
               </div>
             </div>
             <div class="sect sect5">
-              <div class="sect_wrap">
-                <div class="row">
+              <div class="sect_wrap" id="horizonScrollContainer">
+                <div class="row horizonScroll">
                   <div class="item pan">
                     <div class="dsc">
                       <h3>WOODY</h3>
@@ -182,6 +182,23 @@
             </div>
           </div>
         </div>
+        <div class="navPop" id="navPop"  onclick="document.querySelector('#navPop').classList.remove('on'); ">
+          <nav id="mobilePanel" style="opacity: 1; transform: none;">
+            <ul id="gnbMo">
+              <li><a href="#">BRAND</a></li>
+              <li><a href="sub.html" >PRODUCT</a></li>
+              <li><a href="#">COATING</a></li>
+              <li><a href="#">HOW TO USE</a></li>
+            </ul>
+            <ul class="sns">
+              <li>( LINKDEDIN )</li>
+              <li>( BEHANCE )</li>
+              <li>( INSTAGRAM )</li>
+              <li>( PINTEREST )</li>
+            </ul>
+          </nav>
+        </div>
+        
         <div class="footer">
           <div class="footer-gnb">
             <ul>
@@ -199,11 +216,11 @@
               </li>
             </ul>
 
-            <a id="menu" href="./sub.html"> = </a>
+            <a id="menu" href="#" onclick="document.querySelector('#navPop').classList.add('on'); ">=</a>
             <ul>
               <li><h6>( SITEMAP )</h6></li>
-              <li><a href="#">BRAND</a></li>
-              <li><a href="#">PRODUCT</a></li>
+              <li><a href="sub.html" onclick="preventDefault(e)">BRAND</a></li>
+              <li><a href="sub.html">PRODUCT</a></li>
               <li><a href="#">COATING</a></li>
               <li><a href="#">HOW TO USE</a></li>
             </ul>
