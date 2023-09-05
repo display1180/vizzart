@@ -51,7 +51,6 @@ let scrollAmount = 0;
 
 carouselContainer.addEventListener("wheel", (event) => {
   event.preventDefault();
-  console.log(window.scrollY);
 
   const scrollDirection = -1;
 
@@ -78,3 +77,14 @@ carouselContainer.addEventListener("wheel", (event) => {
     imageCarousel.style.transform = `translateX(${scrollAmount}px)`;
   }
 });
+
+const intro = document.querySelector(".intro");
+const introSpan = document.querySelector(".intro .inner span");
+console.log(intro);
+
+setTimeout(() => {
+  intro.classList.add("on");
+}, 200);
+setTimeout(() => {
+  intro.classList.add("end");
+}, 800);

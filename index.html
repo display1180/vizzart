@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-
+    <script src="https://kit.fontawesome.com/c98356d100.js" crossorigin="anonymous"></script>
     <!-- GSAP 라이브러리 설정 -->
     <script
       defer
@@ -38,11 +38,11 @@
             </div>
           </div>
           <div class="gnb">
-            <a href="#">[ VISION ART ]</a>
+            <a href="#">VIZZART!</a>
             <h1>
-              <a href="index.html"
+              <!-- <a href="index.html"
                 ><img src="img/vizzart_logo.jpg" alt="vizzart"
-              /></a>
+              /></a> -->
             </h1>
             <a href="#">[ ENG ]</a>
           </div>
@@ -50,15 +50,18 @@
           <div class="content">
             <div class="sect sect1 mainVisual">
               <h2>VIZZART!</h2>
-              <a href="#">HAPPY COOKING</a>
+              <a href="list.html">HAPPY COOKING</a>
               <!-- <img src="/img/vizzart_main.jpg" alt="vizzart" /> -->
             </div>
             <div class="sect sect2" id="textColored">
               <div class="sect_wrap">
                 <h2>ABOUT VIZZART</h2>
-                <p>VIZZART는 변화해가는 주방의</p>
+                <p>VIZZART는 활기차고 다양한 </p>
+                <p>디자인을 통해 요리와 식사 시간에 </p>
+                <p>즐거운 순간을 제공합니다.</p>
+                <!-- <p>VIZZART는 변화해가는 주방의</p>
                 <p>트렌드에 맞춰 개발된 COOKWARE</p>
-                <p>시리즈입니다.</p>
+                <p>시리즈입니다.</p> -->
               </div>
             </div>
             <div class="sect sect3" id="textAni">
@@ -182,23 +185,24 @@
             </div>
           </div>
         </div>
-        <div class="navPop" id="navPop"  onclick="document.querySelector('#navPop').classList.remove('on'); ">
-          <nav id="mobilePanel" style="opacity: 1; transform: none;">
-            <ul id="gnbMo">
-              <li><a href="#">BRAND</a></li>
-              <li><a href="sub.html" >PRODUCT</a></li>
+        <div class="navPop">
+          <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            <ul class="nav">
+              
+                <!-- <li>BOWIE IN BERLIN</li> -->
+                <li><a href="#">BRAND</a></li>
+              <li><a href="list.html">PRODUCT</a></li>
               <li><a href="#">COATING</a></li>
               <li><a href="#">HOW TO USE</a></li>
+                <!-- <li>&nbsp;</li>
+                <li>
+                    <a href="#" class="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </li> -->
             </ul>
-            <ul class="sns">
-              <li>( LINKDEDIN )</li>
-              <li>( BEHANCE )</li>
-              <li>( INSTAGRAM )</li>
-              <li>( PINTEREST )</li>
-            </ul>
-          </nav>
+    
         </div>
-        
         <div class="footer">
           <div class="footer-gnb">
             <ul>
@@ -216,11 +220,11 @@
               </li>
             </ul>
 
-            <a id="menu" href="#" onclick="document.querySelector('#navPop').classList.add('on'); ">=</a>
+            <a id="menu" href="./sub.html"> = </a>
             <ul>
               <li><h6>( SITEMAP )</h6></li>
-              <li><a href="sub.html" onclick="preventDefault(e)">BRAND</a></li>
-              <li><a href="sub.html">PRODUCT</a></li>
+              <li><a href="#">BRAND</a></li>
+              <li><a href="#">PRODUCT</a></li>
               <li><a href="#">COATING</a></li>
               <li><a href="#">HOW TO USE</a></li>
             </ul>
@@ -267,6 +271,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    
     <script src="js/script.js"></script>
   </body>
 </html>

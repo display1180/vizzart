@@ -65,12 +65,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1vw 2vw;
+  padding: 2vw 2vw;
   position: fixed;
   top: 0;
   width: 100%;
-  mix-blend-mode: multiply;
   z-index: 999;
+  font-size: 20px;
 }
 .gnb h1 {
   width: 10vw;
@@ -198,25 +198,18 @@ body {
   line-height: 100px;
   color: #b91443;
 }
-#horizonScrollContainer {
-  overflow-x: hidden;
-}
 .sect5 .row {
   display: flex;
-  padding: 4vw 0;
+  padding-top: 2vw;
   flex-direction: row;
-  margin-right: 4vw;
-  /* width: calc(60vw * 6); */
+  width: 3720px;
 }
 .sect5 .sect_wrap .item {
-  width: 500px;
-  height: calc(100vh - 4vw);
+  height: 600px;
   background: #eee;
-  min-width: 800px;
-  margin-left: 2vw;
+  margin-left: 20px;
   margin-bottom: 2vw;
   display: flex;
-  margin-left: 4vw;
   justify-content: start;
   align-items: start;
   flex-direction: row;
@@ -224,8 +217,6 @@ body {
   line-height: 1.4;
   text-align: left;
   background: url("../img/woody-pan-main1.jpg") no-repeat center / cover;
-}
-.sect5 .sect_wrap .item:last-child {
 }
 .sect5 .sect_wrap .item h3 {
   font-size: 60px;
@@ -271,7 +262,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: left;
-  gap: 0vw;
+  gap: 2vw;
   background: #f5f5f5;
 }
 .sect6 h2 {
@@ -287,11 +278,8 @@ body {
   font-weight: 700;
   line-height: 100px;
   color: #315c7b;
+  padding-bottom: 30px;
   white-space: nowrap;
-  padding: 0;
-}
-.sect6 img {
-  padding-top: 4vw;
 }
 
 .sect7 {
@@ -375,6 +363,18 @@ body {
   margin: 0 auto;
   display: block;
 }
+
+.navPop {
+  width: 100%;
+  height: 100vh;
+  background: #315c7b;
+  color: #ece1d9;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+}
 @media screen and (max-width: 767px) {
   .sect_wrap {
     display: flex;
@@ -402,48 +402,4 @@ body {
     width: 100%;
     height: 96vw;
   }
-}
-
-#navPop {
-  display: none;
-}
-#navPop.on {
-  display: block;
-}
-#mobilePanel {
-  width: 100%;
-  height: 100%;
-  background: #ece1d9;
-  color: #315c7b;
-  padding: 50px;
-  padding-top: 150px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 5;
-  text-align: center;
-  font-size: 90px;
-}
-
-#mobilePanel h1 {
-  font: bold 40px/1;
-  color: #315c7b;
-  margin-bottom: 30px;
-  margin: 0 auto 5px;
-}
-#mobilePanel h1 img {
-  width: 90px;
-}
-#mobilePanel a {
-  color: #315c7b;
-  font-weight: 700;
-}
-#mobilePanel ul.sns {
-  display: flex;
-  flex-direction: row;
-  font-size: 16px;
-  justify-content: center;
-  gap: 20px;
-  color: #315c7b;
-  padding-top: 50px;
 }
