@@ -166,10 +166,16 @@ body {
   white-space: nowrap;
   border-bottom: 1px solid #eee;
   font-weight: 700;
-  color: #eee;
+  color: #f6f6f6;
 }
-.sect3 ul li.active {
+.sect3 ul li.t1.active {
   color: #315c7b;
+}
+.sect3 ul li.t2.active {
+  color: #ffb700;
+}
+.sect3 ul li.t3.active {
+  color: #f85f8b;
 }
 .sect4 .sect_wrap {
   height: 100vh;
@@ -200,28 +206,31 @@ body {
 }
 .sect5 .row {
   display: flex;
-  padding-top: 2vw;
   flex-direction: row;
   width: 3720px;
+  height: 100vh;
 }
 .sect5 .sect_wrap .item {
-  height: 600px;
+  height: 90vh;
   background: #eee;
-  margin-left: 20px;
-  margin-bottom: 2vw;
+  margin-left: 5vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   display: flex;
   justify-content: start;
   align-items: start;
   flex-direction: row;
-  padding: 3vw;
+  padding: 5vh;
   line-height: 1.4;
   text-align: left;
+  width: 90vh;
   background: url("../img/woody-pan-main1.jpg") no-repeat center / cover;
 }
 .sect5 .sect_wrap .item h3 {
   font-size: 60px;
   line-height: 1;
 }
+
 .sect5 .sect_wrap .item p {
   font-size: 14px;
   line-height: 2;
@@ -458,6 +467,7 @@ body {
 
 #textAni img {
   z-index: 10;
+  max-width: 860px;
 }
 
 #close {

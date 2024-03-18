@@ -28,9 +28,9 @@ ScrollTrigger.create({
 // 텍스트 애니메이션
 const ani5 = gsap.timeline();
 ani5
-  .to("#textAni .t1", { xPercent: 300 }, "text") //
-  .to("#textAni .t2", { xPercent: -300 }, "text")
-  .to("#textAni .t3", { xPercent: 300 }, "text");
+  .to("#textAni .t1", { xPercent: 200 }, "text") //
+  .to("#textAni .t2", { xPercent: -200 }, "text")
+  .to("#textAni .t3", { xPercent: 200 }, "text");
 
 ScrollTrigger.create({
   animation: ani5,
@@ -43,6 +43,29 @@ ScrollTrigger.create({
   anticipatePin: 1,
 });
 
+gsap.to("#horizonScrollContainer", {
+  xPercent: -161,
+  scrollTrigger: {
+    trigger: ".sect5",
+    start: "top top",
+    end: "bottom top",
+    markers: true,
+    pin: true,
+    scrub: true,
+  },
+});
+// const toLeft = gsap.timeline();
+// toLeft.to(".horizonScroll", { xPercent: 100 });
+
+// ScrollTrigger.create({
+//   trigger: ".sect5",
+//   pin: true,
+//   start: "top top",
+//   end: "bottom top",
+//   markers: true,
+
+// });
+
 // 좌우스크롤 처리
 const carouselContainer = document.querySelector("#horizonScrollContainer"); // scroll 이벤트 붙이는 용도의 단순 Element
 const imageCarousel = document.querySelector(".horizonScroll"); // scroll할 크기 계산하고 scroll될 Element
@@ -51,6 +74,8 @@ let scrollAmount = 0;
 
 carouselContainer.addEventListener("wheel", (event) => {
   event.preventDefault();
+
+  // console.log(event);
 
   const scrollDirection = -1;
 
@@ -64,6 +89,7 @@ carouselContainer.addEventListener("wheel", (event) => {
 
   // 맨처음 or 맨끝까지 스크롤 했을 경우판단하여 스크롤 방향 변경 ( vertical, horizon )
   if (scrollAmount === 0 || scrollAmount === -maxScroll) {
+    console.log("event.deltaY", event.deltaY);
     // 정상적인 스크롤
     window.scrollBy({
       top: event.deltaY,
@@ -74,6 +100,7 @@ carouselContainer.addEventListener("wheel", (event) => {
     });
   } else {
     // 좌우 스크롤
+    console.log("scrollAmount", scrollAmount);
     imageCarousel.style.transform = `translateX(${scrollAmount}px)`;
   }
 });
